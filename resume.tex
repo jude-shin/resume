@@ -1,0 +1,245 @@
+%------------------------- % Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.3in}
+\addtolength{\evensidemargin}{-0.3in}
+\addtolength{\textwidth}{0.6in}
+
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-1pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{4pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{6pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Jude Shin} \\ \vspace{1pt}
+    San Luis Obispo, California 93401 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +1 (805) 457-2500 ~ \href{mailto:judes946@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{judes946@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/jude-shin/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/jude-shin/}}  ~
+    \href{https://github.com/jude-shin/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/jude-shin}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California Polytechnic State University}{Sep. 2023 -- present}
+      {Bachelor in Computer Science}{San Luis Obispo, California}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+			% Machine Learning Engineer 
+    \resumeSubheading
+      {Machine Learning Engineer - Full Time}{June 2025 -- Present}
+      {Atlas Alpha, Inc.}{San Luis Obispo, California}
+      \resumeItemListStart
+				\resumeItem{Developing AI models for extreme image classification problems (1,000,000+ separate classifications).}
+				\resumeItem{Utilized Keras for large data augmentation and processing.}
+        \resumeItem{Efficiently balancing computational workloads across different hardware peripherals.}
+        \resumeItem{Continued to work with TensorFlow in Python to build custom CNN models.}
+        \resumeItem{Developing, executing, and monitoring code remotely using CLI tools like tmux, ssh, scp, and git.}
+      \resumeItemListEnd  
+
+			% Coaching 
+    \resumeSubheading
+      {Competitive Rock Climbing Coach - Self Employed}{May 2023 -- Present}
+      {Private Practice}{San Luis Obispo, California}
+      \resumeItemListStart
+        \resumeItem{Applying science backed techniques to build a stronger mind to body connection in athletes.}
+        \resumeItem{Fostering an enjoyable learning environment for young athletes.}
+        \resumeItem{Traveling to competitions across California throughout the year to support these athletes.}
+        \resumeItem{Focusing on fine grained competition techniques.}
+        \resumeItem{Using previous experience from national level youth, collegiate and open competitions.}
+      \resumeItemListEnd 
+
+			% Full Stack 
+    \resumeSubheading
+      {Full Stack Developer - Part Time}{January 2025 -- June 2025}
+      {Atlas Alpha, Inc.}{San Luis Obispo, California}
+      \resumeItemListStart
+        \resumeItem{Full stack development using MongoDB, Express, Node and React.}
+        \resumeItem{Developing e-commerce solutions for board games and trading card games.}
+        \resumeItem{Working with team members to solve complex and dynamic problems.}
+      \resumeItemListEnd 
+
+			% Independent Contractor
+    \resumeSubheading
+      {Machine Learning - Independent Contractor}{May 2024 -- September 2024}
+      {Atlas Alpha, Inc.}{San Luis Obispo, California}
+      \resumeItemListStart
+				\resumeItem{Developed AI models for basic image classification of various trading cards (15,000+ unique classes).}
+        \resumeItem{Utilized Keras for large data augmentation and processing while balancing workflow efficiency on limited computational resources.}
+        \resumeItem{Worked with TensorFlow in Python to build custom CNN models.}
+      \resumeItemListEnd  
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+% %-----------PROJECTS-----------
+% \section{Projects}
+%     \vspace{-5pt}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{WellNex.AI} $|$ \emph{HTML/CSS, AWS DynamoDB, Amazon Translate Services}}{January 2024}
+%           \resumeItemListStart
+%             \resumeItem{Developed a full-stack application to streamline patient registration, minimize compounding data errors, and provided medical professionals with summarized information and primitive diagnostic recommendations.}
+%             \resumeItem{Integrated generative AI to process large set of information to provide concise insights to improve patient treatment.}
+%             \resumeItem{Integrated HIPAA compliant AWS DynamoDB database to achieve data scalability and security.}
+%             \resumeItem{Integrated AI powered Amazon Translation services to increase the accuracy of patient information collected.}
+%             \resumeItem{Created for the SLO Noor Foundation in an effort to providing high-quality, free healthcare to the uninsured on the central coast.}
+%           \resumeItemListEnd
+%           \vspace{-13pt}
+%           
+%       \resumeProjectHeading
+%           {\textbf{Maze Generation Application} $|$ \emph{Java, Java Swing}}{Fall 2020}
+%           \resumeItemListStart
+%             \resumeItem{Developed a Maze Generation application from scratch, implementing Java Swing for the UI.}
+%             \resumeItem{Implemented various different algorithms including Recursive Backtracking, Kruskal's, Prim's, Hunt and Kill, Aldous-Broder, and Recursive Division.}
+%             \resumeItem{Utilized Depth First Search as well as A* algorithms for path-finding.}
+%             \resumeItem{Animations and "stepping" functionality was implemented to better understand the inner workings of the generation and solving of the mazes.}
+%           \resumeItemListEnd   
+%     \resumeSubHeadingListEnd
+% \vspace{-13pt}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \item[] \small{
+    \textbf{Languages:} C, Java, Python, JavaScript, Bash, SQL, HTML/CSS \\
+    \textbf{Frameworks/Stacks:} FastAPI, MERN \\
+    \textbf{Tools \& Platforms:} Docker, Git, GitHub, Unix/Linux, Vim, Tmux, SSH, SCP, RARS \\
+    \textbf{Databases:} MySQL, SQLite, MongoDB \\
+    \textbf{Machine Learning:} TensorFlow, TensorFlow Serving, Keras
+  }
+\end{itemize}
+\vspace{-10pt}
+
+
+% %-----------INVOLVEMENT---------------
+% \section{Leadership/Extracurricular}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{VRC Robotics}{Fall 2021 -- Summer 2023}{Vice President}{San Luis Obispo High School}
+%             \resumeItemListStart
+%                 \resumeItem{Setup, organizing, tear-down, and volunteering for events ranging from local VEXIQ tournaments to VRC State tournaments; in total giving an overall of 100+ community service hours.}
+%                 \resumeItem{Managed fundraising events and organized meetings for the high school robotics club.}
+%                 \resumeItem{Qualified for state for the 2022-2023 robotics season, while receiving the Build Award for that season.}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+\end{document}
+

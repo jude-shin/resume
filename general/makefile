@@ -9,7 +9,7 @@ $(MAIN).pdf: $(TEXFILE)
 	$(PDFLATEX) $(TEXFILE)
 
 allclean: clean
-	rm -f $(TEXFILE) $(MAIN).pdf 
+	rm -f $(MAIN).pdf 
 
 clean:
 	rm -f $(MAIN).log $(MAIN).aux $(MAIN).out

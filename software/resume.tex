@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,11px]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -68,7 +68,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{2pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 
@@ -83,7 +83,7 @@
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{\small #2} \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{4pt}
+    \end{tabular*}\vspace{-4pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -123,14 +123,22 @@
 % \end{tabular*}
 
 \begin{center}
-    {\Huge \scshape Jude Shin} \\ \vspace{1pt}
-    San Luis Obispo, California 93401 \\ \vspace{1pt}
+    {\Huge \scshape Jude Shin} \\ \vspace{4pt}
+    San Luis Obispo, California 93401 \\ \vspace{3pt}
     \small \raisebox{-0.1\height}\faPhone\ +1 (805) 457-2500 ~ \href{mailto:judes946@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{judes946@gmail.com}} ~ 
     \href{https://www.linkedin.com/in/jude-shin/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/jude-shin/}}  ~
     \href{https://github.com/jude-shin/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/jude-shin}}
-    \vspace{-8pt}
+		\vspace{-4pt}
 \end{center}
 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+			{California Polytechnic State University}{September 2023 -- May 2027 (Expected)}
+      {Bachelor in Computer Science}{San Luis Obispo, California}
+  \resumeSubHeadingListEnd
+\vspace{-4pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -140,9 +148,11 @@
       {Software Engineering Intern}{June 2026 -- August 2026}
       {Parsons Corporation}{Camarillo, California}
       \resumeItemListStart
-        \resumeItem{Android and Multi-Platform mobile application development in Kotlin and Java.}
-        \resumeItem{Accurately parsed geospatial data for efficient and reliable relational db querying.}
-        \resumeItem{Actively collaborated with cross-functional teams of developers and military personnel to best suite the needs of our clients.}
+				\resumeItem{Built cross-platform mobile application features in Kotlin and Java for Android-based systems.}
+        \resumeItem{Accurately parsed geospatial data for efficient and reliable relational db querying with R*-Tree spatial indexing.}
+        \resumeItem{Implemented industry standard architecture patterns such as Model-View-ViewModel, Kotlin Flows, Kotlin Coroutines, and Dagger Hilt dependency injection.}
+        \resumeItem{Developed a bidirectional UDP communication layer in Kotlin to parse gimbal telemetry into application-ready functions and construct command payloads for real-time hardware control.}
+				\resumeItem{Authorized developer access to U.S. government restricted TAK (Team Awareness Kit) source code.}
       \resumeItemListEnd 
 
 			% Machine Learning Engineer 
@@ -150,54 +160,56 @@
       {Machine Learning Engineer}{June 2024 -- March 2026}
       {Atlas Alpha, Inc.}{San Luis Obispo, California}
       \resumeItemListStart
-				\resumeItem{Developing AI models for extreme image classification problems (1,000,000+ separate classifications).}
-				\resumeItem{Utilized Keras for large data augmentation and processing.}
-        \resumeItem{Efficiently balancing computational workloads across different hardware peripherals.}
-        \resumeItem{Continued to work with TensorFlow in Python to build custom CNN models.}
-        \resumeItem{Developing, executing, and monitoring code remotely using CLI tools like tmux, ssh, scp, and git.}
+				\resumeItem{Engineered AI models for extreme image classification problems (1,000,000+ different classes).}
+        \resumeItem{Efficiently balanced computational workloads across different hardware peripherals.}
+        \resumeItem{Leveraged TensorFlow in Python to construct custom CNN models.}
+        \resumeItem{Developed, executed, and monitored code remotely using CLI tools like tmux, ssh, scp, and git.}
       \resumeItemListEnd  
 
+			% Coaching 
+    \resumeSubheading
+      {Competitive Rock Climbing Coach}{May 2023 -- Present}
+      {Private Practice}{San Luis Obispo, California}
+      \resumeItemListStart
+        \resumeItem{Applying science backed techniques to build a stronger mind to body connection in athletes.}
+        \resumeItem{Fostering an enjoyable learning environment for young athletes.}
+        \resumeItem{Traveling to competitions across California throughout the year to support these athletes.}
+        \resumeItem{Focusing on fine grained competition techniques.}
+        \resumeItem{Using previous experience from national level youth, collegiate and open competitions.}
+      \resumeItemListEnd 
+
   \resumeSubHeadingListEnd
-\vspace{-16pt}
+\vspace{-4pt}
 
 %-----------RESEARCH-----------
 \section{Research}
     \resumeSubHeadingListStart
 			% Research with Borislav
     \resumeSubheading
-      {Deep Learning Genomics - Research}{January 2026 -- Present}
-      {California Polytechnic State University}{San Luis Obispo, California}
+      {Deep Learning Genomics}{January 2026 -- Present}
+			{California Polytechnic State University}{San Luis Obispo, California}
       \resumeItemListStart
-		\resumeItem{Training encoder/decoder pairs to extract hidden features of different cell embeddings.}
-        \resumeItem{Collaborating with partners to brainstorm and develop highly involved training techniques.}
-        \resumeItem{Working with PyTorch in Python to build and train autoencoders.}
+				\resumeItem{Training encoder/decoder pairs to extract hidden features of different cell embeddings.}
+        \resumeItem{Collaborating with researchers from other universities to brainstorm and develop highly involved training techniques.}
+        \resumeItem{Creating, training, and testing custom autoencoders using PyTorch.}
+				\resumeItem{Advised by Prof. Borislav Hristov, Department of Computer Science and Software Engineering}
       \resumeItemListEnd  
 
     \resumeSubHeadingListEnd
-\vspace{-16pt}
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {California Polytechnic State University}{Sep. 2023 -- present}
-      {Bachelor in Computer Science}{San Luis Obispo, California}
-  \resumeSubHeadingListEnd
-\vspace{-16pt}
-
+\vspace{-4pt}
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
-  \item[] \small{
-    \textbf{Languages:} C, Java, Python, JavaScript, Bash, SQL, HTML/CSS \\
-    \textbf{Frameworks/Stacks:} FastAPI, MERN \\
+  \item[]{
+    \textbf{Languages:} C, Java, Kotlin, Python, JavaScript, Bash, SQL, HTML/CSS \\
+		\textbf{Frameworks \& Stacks:} Kotlin Multi-Platform, FastAPI, MERN \\
     \textbf{Tools \& Platforms:} Docker, Git, GitHub, Unix/Linux, Vim, Tmux, SSH, SCP, RARS \\
-    \textbf{Databases:} MySQL, SQLite, MongoDB \\
+    \textbf{Databases:} SQLite, Room Database, MySQL, MongoDB \\
     \textbf{Machine Learning:} TensorFlow, TensorFlow Serving, Keras
   }
 \end{itemize}
-\vspace{-10pt}
+\vspace{-4pt}
 
 \end{document}
 

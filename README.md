@@ -20,5 +20,3 @@ I want there to be different branches for different parts of my life (climbing o
 
 I also want to put checkpoints for different terms (or years)
 
-
-
